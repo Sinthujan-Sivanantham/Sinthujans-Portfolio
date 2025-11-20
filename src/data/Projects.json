@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "title": "Responsive Portfolio Website",
+      "description": "Moderne, responsive Website mit React und Tailwind CSS",
+      "technologies": ["React", "Tailwind CSS", "TypeScript", "Framer Motion"],
+      "category": "Webentwicklung",
+      "status": "In Entwicklung",
+      "features": [
+        "Responsive Design",
+        "Dark/Light Mode",
+        "Smooth Animations",
+        "Projekt-Galerie"
+      ]
+    },
+    {
+      "title": "E-Commerce UI Design",
+      "description": "Komplettes UX/UI Design für einen Online-Shop mit Prototyping",
+      "technologies": ["Figma", "Framer"],
+      "category": "UX/UI Design",
+      "status": "Abgeschlossen",
+      "features": [
+        "Wireframes",
+        "Interaktive Prototypen",
+        "Design System",
+        "User Flow Diagrams"
+      ]
+    },
+    {
+      "title": "Task Management App",
+      "description": "Webanwendung zur Aufgabenverwaltung mit Backend-Funktionalität",
+      "technologies": ["React", "Node.js", "MongoDB", "Tailwind"],
+      "category": "Full-Stack",
+      "status": "Geplant",
+      "features": [
+        "CRUD Operationen",
+        "User Authentication",
+        "REST API",
+        "Responsive Design"
+      ]
+    }
+  ]
+}

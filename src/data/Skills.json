@@ -1,0 +1,87 @@
+{
+  "skills": {
+    "design": [
+      {
+        "name": "UX/UI Design",
+        "level": "Fortgeschritten",
+        "tools": ["Figma", "Framer"]
+      },
+      {
+        "name": "Wireframes & Prototyping",
+        "level": "Fortgeschritten",
+        "tools": ["Figma", "Framer"]
+      },
+      {
+        "name": "Farbe & Typografie",
+        "level": "Fortgeschritten",
+        "tools": []
+      },
+      {
+        "name": "Designprinzipien",
+        "level": "Fortgeschritten",
+        "tools": []
+      }
+    ],
+    "frontend": [
+      {
+        "name": "HTML/CSS",
+        "level": "Fortgeschritten",
+        "tools": []
+      },
+      {
+        "name": "JavaScript",
+        "level": "Fortgeschritten",
+        "tools": []
+      },
+      {
+        "name": "React",
+        "level": "Lernend",
+        "tools": []
+      },
+      {
+        "name": "TypeScript",
+        "level": "Lernend",
+        "tools": []
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": "Lernend",
+        "tools": []
+      },
+      {
+        "name": "Bootstrap",
+        "level": "Fortgeschritten",
+        "tools": []
+      },
+      {
+        "name": "Responsive Design",
+        "level": "Fortgeschritten",
+        "tools": []
+      }
+    ],
+    "backend": [
+      {
+        "name": "Backend-Grundlagen",
+        "level": "Lernend",
+        "tools": ["Node.js"]
+      },
+      {
+        "name": "API-Integration",
+        "level": "Fortgeschritten",
+        "tools": []
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git & Versionsverwaltung",
+        "level": "Fortgeschritten",
+        "tools": ["Git", "GitHub"]
+      },
+      {
+        "name": "Scrum & Projektplanung",
+        "level": "Fortgeschritten",
+        "tools": []
+      }
+    ]
+  }
+}

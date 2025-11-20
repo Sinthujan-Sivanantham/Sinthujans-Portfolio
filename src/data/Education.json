@@ -1,0 +1,55 @@
+{
+  "education": [
+    {
+      "title": "Umschulung – Digital Product Designer",
+      "institution": "Syntax Institut",
+      "certificate": "IHK-Abschluss",
+      "duration": "2023-2024",
+      "status": "Abgeschlossen",
+      "topics": [
+        "Farbe & Typografie",
+        "Designprinzipien",
+        "Konkurrenz- & Anforderungsanalyse",
+        "Wireframes & Prototypen",
+        "Animationen & Microinteraktionen",
+        "Informationsarchitektur",
+        "Personas & User Flows",
+        "Projektplanung mit Scrum"
+      ],
+      "tools": ["Figma", "Framer"]
+    },
+    {
+      "title": "Einführung in Software- & Webentwicklung",
+      "institution": "Syntax Institut",
+      "duration": "2024",
+      "status": "Abgeschlossen",
+      "topics": [
+        "HTML",
+        "CSS", 
+        "Bootstrap",
+        "Responsive Design",
+        "JavaScript",
+        "API-Integration",
+        "Versionsverwaltung (Git)"
+      ]
+    },
+    {
+      "title": "Weiterbildung – Moderne Webtechnologien",
+      "institution": "Selbststudium",
+      "duration": "2024 - laufend",
+      "status": "Aktiv",
+      "topics": [
+        "React",
+        "Tailwind CSS", 
+        "TypeScript",
+        "Backend-Entwicklung"
+      ]
+    },
+    {
+      "title": "Ausbildung zum Koch",
+      "institution": "",
+      "duration": "2010",
+      "status": "Abgeschlossen"
+    }
+  ]
+}

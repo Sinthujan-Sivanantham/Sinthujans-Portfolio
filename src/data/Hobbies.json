@@ -1,0 +1,24 @@
+{
+  "hobbies": [
+    {
+      "name": "Design & Gestaltung",
+      "description": "Experimentieren mit neuen Design-Trends, Farbkombinationen und Typografie",
+      "category": "Kreativ"
+    },
+    {
+      "name": "Programmierung & Coding",
+      "description": "Private Projekte mit React, TypeScript und neuen Webtechnologien",
+      "category": "Technik"
+    },
+    {
+      "name": "Kochen",
+      "description": "Kreative Küche mit Einflüssen aus verschiedenen Kulturen",
+      "category": "Kreativ"
+    },
+    {
+      "name": "Technologie-Trends",
+      "description": "Verfolgen von aktuellen Entwicklungen in Webentwicklung und UX/UI Design",
+      "category": "Bildung"
+    }
+  ]
+}
