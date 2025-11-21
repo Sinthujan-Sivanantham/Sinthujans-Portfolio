@@ -4,11 +4,12 @@ export default yup.object({
     firstName: yup
         .string()
         .required("First Name required")
-        .min(2),
+        .matches()
+        .min(2, "First Name required"),
     lastName: yup
         .string()
         .required("Last Name required")
-        .min(4),
+        .min(4, "Last Name required"),
    email: yup
     .string()
     .required("Please enter your Email address")
@@ -36,7 +37,7 @@ export default yup.object({
     adress: yup
         .string()
         .required("Adress Name House Number required")
-        .min(5)
+        .min(5, "Adress Name House Number required")
         .matches(/^[A-Za-z0-9\s,.-]{10,}$/, "5–letters minimum"),     
 
 

@@ -8,7 +8,7 @@ const HeroSection = ({ data }) => {
   const heroText = profile.bio[3]; 
 
   // GitHub URL finden (falls vorhanden)
-  const githubLink = profile.social.find(s => s.name === 'GitHub')?.url || '#';
+  
 
   return (
     <header className="pt-32 pb-20 px-6">

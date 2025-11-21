@@ -9,6 +9,7 @@ export default function ValidatedForm() {
     resolver: yupResolver(userSchema)
   });
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const messageValue = watch("message");
 const isButtonDisabled = !messageValue || messageValue.trim() === "";
 
