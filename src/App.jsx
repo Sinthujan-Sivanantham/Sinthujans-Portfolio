@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Importieren Sie hier Ihre Komponenten, z. B. für Home, About, etc.
-import CustomCursor from './components/Navbar/CustomCursor';
+
 import Navbar from './components/Navbar/Navbar';
 
 
@@ -21,7 +21,7 @@ function App() {
  
      <StarBackground />
       <Navbar />
-         <CustomCursor />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />      
