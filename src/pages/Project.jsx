@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from '../components/project/ProjectCard';
-// In modernen React-Apps (Vite/CRA/Next) kannst du JSON direkt importieren:
+
 import projectData from '../data/projects.json'; 
 
 export default function Project() {
