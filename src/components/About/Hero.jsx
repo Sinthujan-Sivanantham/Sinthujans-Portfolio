@@ -1,6 +1,7 @@
 import React from 'react';
+import data from '../../data/aboutMe.json'
 
-const HeroSection = ({ data }) => {
+export default function Hero()  {
   // Wir nehmen das erste Objekt aus dem "about" Array
   const profile = data.about[0];
   
@@ -67,4 +68,3 @@ const HeroSection = ({ data }) => {
   );
 };
 
-export default HeroSection;

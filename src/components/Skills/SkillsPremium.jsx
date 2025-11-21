@@ -1,6 +1,6 @@
 import React from "react";
 import * as Icons from "lucide-react";
-import skills from "../../data/profile.json";
+import skills from "../../data/skills.json";
 
 export default function SkillsPremium() {
   
