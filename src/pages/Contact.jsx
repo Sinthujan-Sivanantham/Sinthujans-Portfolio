@@ -6,8 +6,8 @@ export default function Contact() {
     return (
         <>
             {/* <Form /> */}
-            {/* <ContactForms /> */}
-            <ValidatedForm  />  
+            <ContactForms />
+            {/* <ValidatedForm  />   */}
         </>
     );
 }

@@ -2,16 +2,16 @@
   "about": [
     {
       "name": "Sivanantham Sinthujan",
-      "role": "Digital Product Designer & Webentwickler in Ausbildung",
+      "role": "Digital Product Designer & Web Developer in Training",
       "bio": [
-        " 2010 habe ich meine Ausbildung als Koch absolviert. Seit 2015 - 2024 war ich selbständig. Auf der Suche nach einer neuen Perspektive fand ich die Umschulung beim Syntax Institut, die perfekt zu meiner Leidenschaft für Gestaltung und Technik passte.",
-        "Während der Ausbildung zum Digital Product Designer lernte ich Themen wie Farbe, Typografie, Designprinzipien, Konkurrenz- & Anforderungsanalyse, Wireframes, Prototypen, Animationen, Microinteraktionen, Informationsarchitektur, Personas, User Flows und Projektplanung mit Scrum kennen. Außerdem arbeitete ich intensiv mit Tools wie Figma und Framer.",
-        "Nach meinem erfolgreichen IHK-Abschluss als Digital Product Designer habe ich mit der Einführung in Software- und Webentwicklung begonnen. Ich habe Kenntnisse in HTML, CSS, Bootstrap, Responsive Design, JavaScript, API-Integration, Versionsverwaltung (Git) erworben und lerne aktuell React, Tailwind CSS, TypeScript und Backend-Entwicklung.",
-        "Ich liebe es, zu verstehen, wie aus Code und Design funktionierende digitale Produkte entstehen – klar, nutzerfreundlich und mit Liebe zum Detail."
+        "In 2010, I completed my training as a chef. From 2015 to 2024, I was self-employed. Searching for a new perspective, I found the retraining program at the Syntax Institute, which perfectly matched my passion for design and technology.",
+        "During the training as a Digital Product Designer, I learned topics such as color, typography, design principles, competitor & requirements analysis, wireframes, prototypes, animations, microinteractions, information architecture, personas, user flows, and project planning with Scrum. I also worked extensively with tools like Figma and Framer.",
+        "After successfully completing my IHK certification as a Digital Product Designer, I began an introduction to software and web development. I acquired skills in HTML, CSS, Bootstrap, responsive design, JavaScript, API integration, version control (Git), and I am currently learning React, Tailwind CSS, TypeScript, and backend development.",
+        "I love understanding how functional digital products are created from code and design – clear, user-friendly, and with attention to detail."
       ],
       "photo": "/src/assets/Profile.png",
       "location": "02324",
-      "email": "Sinthujan@example.com",
+      "url": "/.src/pages/Contact.jsx",
       "social": [
         { 
           "name": "LinkedIn", 
@@ -26,20 +26,20 @@
       ],
       "attributes": [
         {
-          "title": "Kreativ",
-          "description": "Leidenschaft für visuelles Design und ästhetische Lösungen"
+          "title": "Creative",
+          "description": "Passion for visual design and aesthetic solutions"
         },
         {
-          "title": "Lernbereit",
-          "description": "Stetige Weiterentwicklung in Design und Entwicklung"
+          "title": "Eager to Learn",
+          "description": "Continuous development in design and development"
         },
         {
-          "title": "Detailorientiert",
-          "description": "Hohe Wertschätzung für sauberen Code und durchdachtes Design"
+          "title": "Detail-Oriented",
+          "description": "High appreciation for clean code and thoughtful design"
         },
         {
-          "title": "Problemlöser",
-          "description": "Analytische Herangehensweise an komplexe Herausforderungen"
+          "title": "Problem Solver",
+          "description": "Analytical approach to complex challenges"
         }
       ]
     }

@@ -7,7 +7,7 @@ export const ThemeToggle = () => {
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
+    if (storedTheme == "dark") {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDarkMode(true)
       document.documentElement.classList.add("dark");
@@ -31,7 +31,7 @@ export const ThemeToggle = () => {
 
   return (
     <button onClick={toggleTheme}
-    className={cn("fixed max-sm:hidden tot-5 right-5 z-50 rounded-full transition-colors duration-300 m-4"
+    className={cn("fixed max-sm:hidden tot-5 right-5 z-50 rounded-full transition-colors duration-300 gap-4"
     )} >
       {isDarkMode ? (
         <Sun className="h-6 text-yellow-300" />

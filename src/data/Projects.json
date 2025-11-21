@@ -2,35 +2,87 @@
   "projects": [
     {
       "title": "Responsive Portfolio Website",
-      "description": "Moderne, responsive Website mit React und Tailwind CSS",
-      "technologies": ["React", "Tailwind CSS", "TypeScript", "Framer Motion"],
-      "category": "Webentwicklung",
-      "status": "In Entwicklung",
+      "description": "Modern, responsive website with React and Tailwind CSS",
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "https://img.icons8.com/?size=100&id=WoopfRcDj3RF&format=png&color=000000"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "Framer Motion",
+          "icon": "https://img.icons8.com/?size=100&id=G7NMjcZM9R01&format=png&color=000000"
+        }
+      ],
+      "category": {
+        "name": "Web Development",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+      },
+      "status": "In Development",
       "features": [
         "Responsive Design",
         "Dark/Light Mode",
         "Smooth Animations",
-        "Projekt-Galerie"
+        "Project Gallery"
       ]
     },
     {
       "title": "E-Commerce UI Design",
-      "description": "Komplettes UX/UI Design für einen Online-Shop mit Prototyping",
-      "technologies": ["Figma", "Framer"],
-      "category": "UX/UI Design",
-      "status": "Abgeschlossen",
+      "description": "Complete UX/UI design for an online shop with prototyping",
+      "technologies": [
+        {
+          "name": "Figma",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+        },
+        {
+          "name": "Framer",
+          "icon": "https://img.icons8.com/?size=100&id=G7NMjcZM9R01&format=png&color=000000"
+        }
+      ],
+      "category": {
+        "name": "UX/UI Design",
+        "icon": "https://img.icons8.com/?size=100&id=H6AOGZRC69pC&format=png&color=000000"
+      },
+      "status": "Completed",
       "features": [
         "Wireframes",
-        "Interaktive Prototypen",
+        "Interactive Prototypes",
         "Design System",
         "User Flow Diagrams"
       ]
     },
     {
       "title": "Task Management App",
-      "description": "Webanwendung zur Aufgabenverwaltung mit Backend-Funktionalität",
-      "technologies": ["React", "Node.js", "MongoDB", "Tailwind"],
-      "category": "Full-Stack",
+      "description": "Web application for task management with backend functionality",
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "Node.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+        },
+        {
+          "name": "Tailwind",
+          "icon": "https://img.icons8.com/?size=100&id=WoopfRcDj3RF&format=png&color=000000"
+        }
+      ],
+      "category": {
+        "name": "Full-Stack",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      },
       "status": "Geplant",
       "features": [
         "CRUD Operationen",

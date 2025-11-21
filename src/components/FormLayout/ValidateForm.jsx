@@ -4,10 +4,12 @@ import userSchema from '../../schemas/userschema'
 
 export default function ValidatedForm() {
 
-  const { handleSubmit, register, formState: { errors, isSubmitSuccessful } } = useForm({
+  const { handleSubmit, register, watch, formState: { errors, isSubmitSuccessful } } = useForm({
     mode: "onChange",
     resolver: yupResolver(userSchema)
   });
+const messageValue = watch("message");
+const isButtonDisabled = !messageValue || messageValue.trim() === "";
 
   function onSubmit(data) {
     console.log(data);
@@ -20,7 +22,7 @@ export default function ValidatedForm() {
     
      
       <div className=" container  mb-4 w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg p-8  gradient-border shadow-xl  backdrop-blur-2xl     sm:p-12">
+              <div className="relative rounded-lg p-8  dark:shadow-[0_0_22px_rgba(255,255,255,0.15)]  backdrop-blur-2xl     sm:p-12">
                        
     <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -80,11 +82,15 @@ export default function ValidatedForm() {
      
      
      <div className="text-2xl ">{isSubmitSuccessful && <p style={{ color: "green"}}>Form submitted successfully!</p>} </div> 
-      <button className="w-100 rounded border border-stroke px-3.5 py-3 
+       <button 
+          disabled={isButtonDisabled} 
+          className={`w-100 rounded border border-stroke px-3.5 py-3 
           text-base text-foreground outline-none mb-4 mt-4
-          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6" 
-          type="submit">Send Message</button>
-
+          focus:border-primary dark:border-dark-3 dark:bg-blue-700 dark:text-dark-6
+          ${isButtonDisabled ? 'opacity-50 cursor-not-allowed' : ''}`} 
+          type="submit">
+            Send Message
+      </button>
       
     </form>
     </div>

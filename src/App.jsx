@@ -5,26 +5,27 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CustomCursor from './components/Navbar/CustomCursor';
 import Navbar from './components/Navbar/Navbar';
 
-import Home from './components/About/Hero';
-import About from './pages/About';
+
+import Home from './pages/Home';
 import Skills from './pages/Skills';
+import Project from './pages/Project';
 import Contact from './pages/Contact';
-import NotFound from './pages/About';
-import { ThemeToggle } from './components/Background/ThemeToggle';
+import NotFound from './pages/Home';
+
 import { StarBackground } from './components/Background/StarBackground';
 
 
 function App() {
   return (
     <div className='  min-h-screen bg-background text-foreground overflow-x-hidden'>
-      <ThemeToggle />
+ 
      <StarBackground />
       <Navbar />
          <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />      
-        <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} /> 
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>

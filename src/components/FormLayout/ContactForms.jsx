@@ -1,22 +1,36 @@
-import React from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import userSchema from '../../schemas/userschema'
 
-const ContactForms = () => {
+export default function ValidatedForm() {
+
+  const { handleSubmit, register,watch,  formState: { errors, isSubmitSuccessful } } = useForm({
+    mode: "onChange",
+    resolver: yupResolver(userSchema)
+  });
+
+  const messageValue = watch("message");
+const isButtonDisabled = !messageValue || messageValue.trim() === "";
+
+  function onSubmit(data) {
+    console.log(data);
+  }
   return (
     <>
-      <section className="  relative z-10 overflow-hidden  py-20  lg:py-[120px]">
+      <section className=" shadow-[0_0_22px_rgba(255,255,255,0.15)] relative z-10 overflow-hidden  py-20  lg:py-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="mb-4 block text-base font-semibold text-primary">
-                  Contact Us
+                <span className="mb-4 block  font-semibold text-primary text-2xl">
+                  Contact Me
                 </span>
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                  GET IN TOUCH WITH US
+                <h2 className="mb-6 text-[32px] font-bold uppercase  sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                  GET IN TOUCH WITH ME
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                Feel free to reach out to us with any questions or inquiries. Our team is here 
-                to assist you and provide the information you need. We look forward to hearing from you!
+                Feel free to reach out to me with any questions or inquiries. I am  is here 
+                to assist you and provide the information you need. I look forward to hearing from you!
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -35,7 +49,7 @@ const ContactForms = () => {
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
-                      Our Location
+                      My Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
                      Friedrih-Ebert-Platz 19, 30459 Hannover, Germany
@@ -110,38 +124,77 @@ const ContactForms = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg p-8 shadow-lg dark:bg-dark-2 sm:p-12">
-                <form>
-                  <ContactInputBox
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="phone"
-                    placeholder="Your Phone"
-                  />
-                  <ContactTextArea
-                    row="6"
-                    placeholder="Your Message"
-                    name="details"
-                    defaultValue=""
-                  />
-                  <div>
-                    <button
-                      type="submit"
-                      className="w-full rounded border border-primary bg-primary p-3 text-foreground transition hover:bg-opacity-90"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </form>
+              <div className="relative rounded-lg p-8 shadow-lg card sm:p-12 dark:shadow-[0_0_22px_rgba(255,255,255,0.15)]">
+               
+                <form onSubmit={handleSubmit(onSubmit)}>
+
+      <input  className="w-100 rounded border border-stroke px-3.5 py-3 
+          text-base text-body-color outline-none mb-1 mt-5    
+          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          {...register("firstName")} placeholder="First Name" />
+
+     <p style={{color:"red",  }}>{errors.firstName?.message}</p>
+
+
+      <input className="w-100 rounded border border-stroke px-3.5 py-3 
+          text-base text-body-color outline-none mb-1 mt-5
+          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          {...register("lastName")} placeholder="Last Name" />
+        <p style={{color:"red"  }}>{errors.lastName?.message}</p>
+     
+     
+      <input className="w-100 rounded border border-stroke px-3.5 py-3 
+          text-base text-body-color outline-none mb-1 mt-5
+          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          {...register("adress")} placeholder="Please Enter Your Adress and House Number" />
+        <p style={{color:"red",  }}>{errors.adress?.message}</p>
+     
+     
+      <input className="w-100 rounded border border-stroke px-3.5 py-3 
+          text-base text-body-color outline-none mb-1 mt-5
+          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          {...register("city")} placeholder="City" />
+        <p style={{color:"red",  }}>{errors.city?.message}</p>
+
+      <input className="w-100 rounded border border-stroke px-3.5 py-3 
+          text-base text-body-color outline-none mb-1 mt-5
+          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          {...register("country")} placeholder="Country" />
+        <p style={{color:"red",  }}>{errors.country?.message}</p>
+
+      <input className="w-100 rounded border border-stroke px-3.5 py-3 
+          text-base text-body-color outline-none mb-1 mt-5
+          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          type="email" {...register("email")} placeholder="Email Address" />
+      <p style={{color:"red",  }}>{errors.email?.message}</p>
+
+      <input className="w-100 rounded border border-stroke px-3.5 py-3 
+          text-base text-body-color outline-none mb-1 mt-5
+          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          type="phone" {...register("phone")} placeholder="Phone Number" />
+      <p  style={{color:"red", }}>{errors.phone?.message}</p>
+     
+     
+      <textarea className="w-100 h-40 rounded border border-stroke px-3.5 py-3 
+          text-base text-body-color outline-none mb-1 mt-5
+          focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          type="email" {...register("message")} placeholder="Please Enter Your Message" />
+      <p style={{color:"red",  }}>{errors.message?.message}</p>
+
+     
+     
+     <div className="text-xl ">{isSubmitSuccessful && <p style={{ color: "green"}}>Form submitted successfully! 
+      <br />Thank your for Contact Us</p>} </div> 
+       <button 
+          disabled={isButtonDisabled} // Deaktiviert den Button, wenn message leer ist
+          className={`w-100 rounded border border-stroke px-3.5 py-3 
+          text-base text-foreground outline-none mb-4 mt-4
+          focus:border-primary dark:border-dark-3 dark:bg-blue-700 dark:text-dark-6
+          ${isButtonDisabled ? 'opacity-50 cursor-not-allowed' : ''}`} // Visuelles Feedback für deaktivierten Zustand
+          type="submit">
+            Send Message
+      </button>
+ </form>
                 <div>
                   <span className="absolute -right-9 -top-10 z-[-1]">
                     <svg
@@ -959,35 +1012,35 @@ const ContactForms = () => {
   );
 };
 
-export default ContactForms;
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
-  return (
-    <>
-      <div className="mb-6">
-        <textarea
-          rows={row}
-          placeholder={placeholder}
-          name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-          defaultValue={defaultValue}
-        />
-      </div>
-    </>
-  );
-};
 
-const ContactInputBox = ({ type, placeholder, name }) => {
-  return (
-    <>
-      <div className="mb-6">
-        <input
-          type={type}
-          placeholder={placeholder}
-          name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-        />
-      </div>
-    </>
-  );
-};
+// const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
+//   return (
+//     <>
+//       <div className="mb-6">
+//         <textarea
+//           rows={row}
+//           placeholder={placeholder}
+//           name={name}
+//           className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+//           defaultValue={defaultValue}
+//         />
+//       </div>
+//     </>
+//   );
+// };
+
+// const ContactInputBox = ({ type, placeholder, name }) => {
+//   return (
+//     <>
+//       <div className="mb-6">
+//         <input
+//           type={type}
+//           placeholder={placeholder}
+//           name={name}
+//           className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+//         />
+//       </div>
+//     </>
+//   );
+// };

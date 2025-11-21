@@ -1,55 +1,55 @@
 {
   "education": [
     {
-      "title": "Umschulung – Digital Product Designer",
-      "institution": "Syntax Institut",
-      "certificate": "IHK-Abschluss",
+      "title": "Retraining – Digital Product Designer",
+      "institution": "Syntax Institute",
+      "certificate": "IHK Certificate",
       "duration": "2023-2024",
-      "status": "Abgeschlossen",
+      "status": "Completed",
       "topics": [
-        "Farbe & Typografie",
-        "Designprinzipien",
-        "Konkurrenz- & Anforderungsanalyse",
-        "Wireframes & Prototypen",
-        "Animationen & Microinteraktionen",
-        "Informationsarchitektur",
+        "Color & Typography",
+        "Design Principles",
+        "Competitor & Requirements Analysis",
+        "Wireframes & Prototypes",
+        "Animations & Microinteractions",
+        "Information Architecture",
         "Personas & User Flows",
-        "Projektplanung mit Scrum"
+        "Project Planning with Scrum"
       ],
       "tools": ["Figma", "Framer"]
     },
     {
-      "title": "Einführung in Software- & Webentwicklung",
-      "institution": "Syntax Institut",
+      "title": "Introduction to Software & Web Development",
+      "institution": "Syntax Institute",
       "duration": "2024",
-      "status": "Abgeschlossen",
+      "status": "Completed",
       "topics": [
         "HTML",
-        "CSS", 
+        "CSS",
         "Bootstrap",
         "Responsive Design",
         "JavaScript",
-        "API-Integration",
-        "Versionsverwaltung (Git)"
+        "API Integration",
+        "Version Control (Git)"
       ]
     },
     {
-      "title": "Weiterbildung – Moderne Webtechnologien",
-      "institution": "Selbststudium",
-      "duration": "2024 - laufend",
-      "status": "Aktiv",
+      "title": "Further Education – Modern Web Technologies",
+      "institution": "Self-Study",
+      "duration": "2024 - ongoing",
+      "status": "Active",
       "topics": [
         "React",
-        "Tailwind CSS", 
+        "Tailwind CSS",
         "TypeScript",
-        "Backend-Entwicklung"
+        "Backend Development"
       ]
     },
     {
-      "title": "Ausbildung zum Koch",
+      "title": "Training as a Chef",
       "institution": "",
       "duration": "2010",
-      "status": "Abgeschlossen"
+      "status": "Completed"
     }
   ]
 }

@@ -1,27 +1,122 @@
 {
-    "coreSkills": [
-    { "name": "UI/UX Design", "icon": "Palette" },
-    { "name": "Wireframing", "icon": "Grid" },
-    { "name": "Prototyping", "icon": "Workflow" },
-    { "name": "User Flows", "icon": "GitBranch" },
-    { "name": "Responsive Design", "icon": "Smartphone" },
-    { "name": "HTML5", "icon": "Code" },
-    { "name": "CSS3", "icon": "Braces" },
-    { "name": "JavaScript", "icon": "FileCode" },
-    { "name": "React", "icon": "Atom" }
+  "coreSkills": [
+    { 
+      "name": "UI/UX Design", 
+      "icon": "Palette", 
+      "description": "Designing user interfaces and experiences. This involves creating visually appealing layouts and ensuring usability. It focuses on enhancing user satisfaction through intuitive design.",
+      "backgroundColor": "#FFB6C1"
+    },
+    { 
+      "name": "Wireframing", 
+      "icon": "Grid", 
+      "description": "Creating wireframes to outline app structure. Wireframes serve as blueprints for the design process. They help visualize the layout and functionality of an application.",
+      "backgroundColor": "#ADD8E6"
+    },
+    { 
+      "name": "Prototyping", 
+      "icon": "Workflow", 
+      "description": "Building interactive prototypes for testing. Prototypes allow stakeholders to experience the product before development. They are essential for gathering feedback and refining ideas.",
+      "backgroundColor": "#FFD700"
+    },
+    { 
+      "name": "User Flows", 
+      "icon": "GitBranch", 
+      "description": "Mapping user journeys through the app. User flows help identify the steps users take to achieve their goals. They ensure a seamless and logical navigation experience.",
+      "backgroundColor": "#90EE90"
+    },
+    { 
+      "name": "Responsive Design", 
+      "icon": "Smartphone", 
+      "description": "Ensuring designs work on all devices. This involves creating layouts that adapt to different screen sizes. It improves accessibility and user experience across platforms.",
+      "backgroundColor": "#87CEEB"
+    },
+    { 
+      "name": "HTML5", 
+      "icon": "Code", 
+      "description": "Structuring web content with HTML5. HTML5 provides semantic elements for better organization. It is the foundation of modern web development.",
+      "backgroundColor": "#FF4500"
+    },
+    { 
+      "name": "CSS3", 
+      "icon": "Braces", 
+      "description": "Styling web pages with CSS3. CSS3 enables advanced styling and animations. It allows for creating visually engaging and dynamic websites.",
+      "backgroundColor": "#1E90FF"
+    },
+    { 
+      "name": "JavaScript", 
+      "icon": "FileCode", 
+      "description": "Adding interactivity with JavaScript. JavaScript powers dynamic content and user interactions. It is a versatile language used in both frontend and backend development.",
+      "backgroundColor": "#F0E68C"
+    },
+    { 
+      "name": "React", 
+      "icon": "Atom", 
+      "description": "Building UI components with React. React simplifies the process of creating reusable components. It is widely used for building modern, scalable web applications.",
+      "backgroundColor": "#61DAFB"
+    }
   ],
   "toolsDaily": [
-    { "name": "Figma", "icon": "Figma" },
-    { "name": "Framer", "icon": "Frame" },
-    { "name": "Git", "icon": "GitBranch" },
-    { "name": "GitHub", "icon": "Github" },
-    { "name": "VS Code", "icon": "Code2" },
-    { "name": "Vercel", "icon": "Cloud" }
+    { 
+      "name": "Figma", 
+      "icon": "Figma", 
+      "description": "Designing and prototyping interfaces. Figma is a collaborative tool that supports real-time editing. It is widely used for creating high-fidelity designs.",
+      "backgroundColor": "#A259FF"
+    },
+    { 
+      "name": "Framer", 
+      "icon": "Frame", 
+      "description": "Creating animations and prototypes. Framer allows designers to build interactive and animated designs. It bridges the gap between design and development.",
+      "backgroundColor": "#FF69B4"
+    },
+    { 
+      "name": "Git", 
+      "icon": "GitBranch", 
+      "description": "Version control for code. Git tracks changes and enables collaboration among developers. It is essential for managing code in software projects.",
+      "backgroundColor": "#F1502F"
+    },
+    { 
+      "name": "GitHub", 
+      "icon": "Github", 
+      "description": "Hosting and collaborating on code. GitHub provides a platform for version control and code sharing. It supports open-source contributions and team workflows.",
+      "backgroundColor": "#181717"
+    },
+    { 
+      "name": "VS Code", 
+      "icon": "Code2", 
+      "description": "Code editing with Visual Studio Code. VS Code offers a lightweight yet powerful development environment. It supports extensions for various programming languages.",
+      "backgroundColor": "#007ACC"
+    },
+    { 
+      "name": "Vercel", 
+      "icon": "Cloud", 
+      "description": "Deploying web applications. Vercel simplifies the process of hosting and scaling web apps. It is optimized for frontend frameworks like Next.js.",
+      "backgroundColor": "#000000"
+    }
   ],
   "currentlyLearning": [
-    { "name": "TypeScript", "icon": "FileType2" },
-    { "name": "Tailwind CSS", "icon": "Wind" },
-    { "name": "API-Integration", "icon": "PlugZap" },
-    { "name": "Backend Basics", "icon": "Server" }
+    { 
+      "name": "TypeScript", 
+      "icon": "FileType2", 
+      "description": "Learning strongly typed JavaScript. TypeScript enhances code quality and maintainability. It helps catch errors early during development.",
+      "backgroundColor": "#3178C6"
+    },
+    { 
+      "name": "Tailwind CSS", 
+      "icon": "Wind", 
+      "description": "Using utility-first CSS framework. Tailwind CSS speeds up the styling process with pre-defined classes. It promotes consistency and reduces custom CSS code.",
+      "backgroundColor": "#38B2AC"
+    },
+    { 
+      "name": "API-Integration", 
+      "icon": "PlugZap", 
+      "description": "Connecting frontend with APIs. API integration enables data exchange between systems. It is crucial for building dynamic and data-driven applications.",
+      "backgroundColor": "#FFA500"
+    },
+    { 
+      "name": "Backend Basics", 
+      "icon": "Server", 
+      "description": "Understanding backend development. This includes learning about databases, servers, and APIs. It provides the foundation for full-stack development.",
+      "backgroundColor": "#8B0000"
+    }
   ]
 }
