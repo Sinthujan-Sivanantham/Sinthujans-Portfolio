@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
-import projectData from '../../data/projects.json'; 
+import projectData from '../../data/Projects.json'; 
 
 export default function Projects() {
   return (
